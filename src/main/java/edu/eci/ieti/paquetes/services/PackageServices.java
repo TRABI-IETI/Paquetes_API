@@ -18,4 +18,6 @@ public interface PackageServices {
     Optional<Package> addNewPlacePackage(String id, String place);
 
     Optional<Package> deletePlacePackage(String id, String place);
+
+    Optional<Package> createTrabi(String name, Package trabi);
 }

@@ -52,6 +52,11 @@ public class PackageController {
         return ResponseEntity.ok(packageServices.deletePlacePackage(id, place));
     }
 
+    @PostMapping("{name}")
+    public ResponseEntity<?> createTrabi(@PathVariable("name") String name, @RequestBody Package trabi){
+        return ResponseEntity.ok(packageServices.createTrabi(name, trabi));
+    }
+
 
 
 }

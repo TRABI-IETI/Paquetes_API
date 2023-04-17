@@ -70,4 +70,10 @@ public class PackageServicesImpl implements PackageServices {
         this.updatePackage(id, p);
         return packageRepository.findById(id);
     }
+
+    @Override
+    public Optional<Package> createTrabi(String name, Package trabi) {
+        packageRepository.save(trabi);
+        return Optional.empty();
+    }
 }
